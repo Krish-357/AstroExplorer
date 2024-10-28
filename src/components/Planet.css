@@ -1,0 +1,116 @@
+.planet { 
+    min-height: 100vh;
+    background-color: #0d1b2a; 
+    background-image: url('https://images-assets.nasa.gov/image/PIA23121/PIA23121~medium.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+}
+
+.planet-header {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fca311;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.planet-description {
+    font-size: 1.2rem;
+    color: #c5c6c7;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.planet-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.planet-image {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.planet-image:hover {
+    transform: scale(1.05);
+}
+
+.planet-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.planet-detail-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.planet-detail-section:last-child {
+    margin-bottom: 0;
+}
+
+.planet-detail-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fca311;
+}
+
+.planet-detail-info {
+    font-size: 1rem;
+    color: #e0e1dd;
+}
+
+.planet-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fca311;
+    color: #0d1b2a;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.planet-button:hover {
+    background-color: #d89000;
+}
+
+@media (max-width: 768px) {
+    .planet-header {
+        font-size: 2.5rem;
+    }
+
+    .planet-description {
+        font-size: 1rem;
+    }
+
+    .planet-detail-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .planet-detail-title, .planet-detail-info {
+        font-size: 1rem;
+    }
+}
